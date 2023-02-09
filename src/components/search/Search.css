@@ -1,0 +1,13 @@
+.searchDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+input {
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 25px;
+  padding: 5px 30px 10px 30px;
+}

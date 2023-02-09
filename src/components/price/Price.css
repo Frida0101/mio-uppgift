@@ -1,0 +1,9 @@
+.price .campaignName {
+    padding: 5px;
+    font-size: 20px;
+    background-color: #db2326;
+    color: white;
+    position: absolute;
+    top: 1%;
+    left: 17%;
+  }

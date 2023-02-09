@@ -1,0 +1,116 @@
+.product {
+  height: 100%;
+  width: 100%;
+}
+
+.backButton {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+}
+
+.productCard {
+  position: relative;
+  height: 30%;
+  width: 50%;
+}
+
+.product .image {
+  height: 60%;
+  width: 100%;
+  padding: 8px;
+}
+
+.product img {
+  width: 60%;
+  height: 400px;
+  object-fit: contain;
+}
+
+.product {
+  margin-top: 5%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.product .productDescription {
+  font-size: 15px;
+  margin-bottom: 5%;
+}
+
+.product .productName {
+  margin-bottom: 5%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.product .productPrice {
+  margin-bottom: 5%;
+  font-size: 20px;
+  text-align: center;
+}
+
+.product .productPrice .campaignName {
+  padding: 5px;
+  font-size: 20px;
+  background-color: #db2326;
+  color: white;
+  position: absolute;
+  top: 1%;
+  left: 17%;
+}
+
+.product .button {
+  align-content: center;
+  transition: 0.2s;
+}
+
+.button button {
+  display: inline-block;
+  font-size: 18px;
+  background-color: #ffffff;
+  padding: 5px 30px 5px 30px;
+  border-radius: 10px;
+  border: 3px solid #000000;
+  margin: 5px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+}
+
+.button button span {
+  padding-bottom: 10%;
+}
+
+.button :hover {
+  background-color: #ffffff;
+  border-color: #548f55;
+  color: #548f55;
+}
+
+.button :active {
+  background-color: #548f55;
+  color: #ffffff;
+}
+
+@media (max-width: 1000px) {
+  .productCard {
+    margin-top: 10%;
+  }
+
+  .productCard .image img {
+    margin: 10%;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .productCard {
+    margin-top: 30% !important;
+  }
+}

@@ -1,0 +1,96 @@
+.productList {
+  display: flex;
+  justify-content: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.productList .list {
+  transition: transform 0.3s;
+  max-width: 1200px;
+  --columnCount: 3;
+  display: grid;
+  grid-template-columns: repeat(var(--columnCount), minmax(0, 1fr));
+}
+
+.productList .list :hover {
+  transform: scale(1.05);
+  transform: translateZ(20%);
+}
+
+.productList .image {
+  width: 100%;
+  height: 70%;
+  padding: 8px;
+  transition: 0.3s;
+}
+
+.productList .image :hover {
+  transform: scale(1);
+}
+
+.productList img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: 0.5s;
+}
+
+.productList .list .card {
+  position: relative;
+  flex: 0 0 368px;
+  margin: 5%;
+  background-color: white;
+  height: 500px;
+  cursor: pointer;
+  padding: 16px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 3px 5px 0px;
+  border-color: rgba(0, 0, 0, 0.03) rgba(0, 0, 0, 0.03) currentcolor;
+  border-style: solid solid none;
+  border-width: 1px 1px medium;
+  border-image: none 100% / 1 / 0 stretch;
+}
+
+.productList .list .productPrice {
+  font-size: 20px;
+  text-align: center;
+}
+
+.productList .list .productPrice .campaignName {
+  padding: 5px;
+  font-size: 20px;
+  background-color: #db2326;
+  color: white;
+  position: absolute;
+  top: 1%;
+  left: 1%;
+}
+
+.productList .list .productName {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+@media (max-width: 1200px) {
+  .productList .list {
+    --columnCount: 3;
+  }
+}
+
+@media (max-width: 1000px) {
+  .productList .list {
+    --columnCount: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .productList .list {
+    --columnCount: 1;
+  }
+}
